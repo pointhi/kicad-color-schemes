@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.0.0-rc2-221-gd3deaf5ff)")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.1-8be2ce7~80~ubuntu16.04.1)
 
   (general
     (thickness 1.6)
@@ -46,8 +46,6 @@
     (zone_clearance 0.3)
     (zone_45_only yes)
     (trace_min 0.19812)
-    (segment_width 0.381)
-    (edge_width 0.381)
     (via_size 0.6)
     (via_drill 0.4)
     (via_min_size 0.5)
@@ -57,6 +55,8 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
+    (edge_width 0.381)
+    (segment_width 0.381)
     (pcb_text_width 0.3048)
     (pcb_text_size 1.524 2.032)
     (mod_edge_width 0.1524)
@@ -66,7 +66,7 @@
     (pad_drill 1.6)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 65.151 148.4122)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFDFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)

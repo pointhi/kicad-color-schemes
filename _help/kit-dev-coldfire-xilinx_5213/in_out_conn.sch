@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:kit-dev-coldfire-xilinx_5213-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "Dev kit coldfire 5213"
 Date "Sun 22 Mar 2015"
 Rev "0"
