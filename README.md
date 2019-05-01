@@ -22,13 +22,16 @@ color-scheme                                               | screenshot
 **solarized-dark** *http://ethanschoonover.com/solarized*  | ![Dark theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/eeschema.png)
 **solarized-light** *http://ethanschoonover.com/solarized* | ![Light theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/eeschema.png)
 **sw**                                                     | ![simple black/white theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/sw/eeschema.png)
+**behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/eeschema.png)
 
 ## pcbnew
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
 **kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/pcbnew.png)
+**behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/pcbnew.png)
 
 ## footprint editor
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
 **kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/footprint_editor.png)
+**behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/footprint_editor.png)
