@@ -37,5 +37,4 @@ color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
 **kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/footprint_editor.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/footprint_editor.png)
-
-**blue-green-dark**     | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/footprint_editor.png)
+**blue-green-dark**                                        | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/footprint_editor.png)
