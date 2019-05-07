@@ -6,9 +6,10 @@ orig=open(sys.argv[2],"r")
 origlines = orig.readlines()
 
 for idx,oline in enumerate(origlines):
-  subst = oline.split('=')
+  osubst = oline.split('=')
   for idx1,pline in enumerate(patch):
-    if subst[0] in pline:
+    psubst = pline.split('=')
+    if osubst[0] == psubst[0]:
       origlines[idx] = pline
       patch.pop(idx1)
 origlines += patch
