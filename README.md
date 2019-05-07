@@ -14,6 +14,16 @@ Use a text editor to overwrite the relevant sections with the data found in the 
 
 The pcbnew config file content has been split into the sections responsible for the footprint editor and the one for pcbnew. This is done to allow you to more easily mix and match different schemes for different tools.
 
+## Automatic patcher
+
+You can use patch.py to automatically patch the configuration files. The python script searches for settings that have to be overwritten and appends all new settings to the end of the file.
+
+`python3.6 patch.py <patch file> <config file>`
+
+For example:
+
+`python3.6 patch.py ~/kicad-color-schemes/blue-green-dark/pcbnew ~/.config/kicad/pcbnew`
+
 ## eeschema
 
 color-scheme                                               | screenshot
