@@ -1,4 +1,4 @@
-#!/bin/python3.6
+#!/usr/bin/env python3
 import sys, os
 import argparse
 from collections import OrderedDict
