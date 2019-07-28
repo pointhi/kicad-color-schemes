@@ -3,6 +3,7 @@ import sys, os
 import argparse
 from collections import OrderedDict
 from pathlib import Path
+import shutil
 
 class ConfigFile():
     def __init__(self, filepath):
@@ -42,11 +43,10 @@ class ConfigFile():
                 print("{}={}".format(key, value), file=file)
 
 parser = argparse.ArgumentParser(description='Patch the KiCad settings file with the given colour scheme.')
-parser.add_argument('config_dir', type=Path, nargs=1,
-                        help='Path to kicad config directory')
 parser.add_argument('scheme_path', type=Path, nargs=1,
                         help='Path to scheme definition.')
-
+parser.add_argument('config_dir', type=Path, nargs=1,
+                        help='Path to kicad config directory')
 parser.add_argument('-p', '--pcb_disable', action='store_true', help='Disable patching of pcb_new colour definition')
 parser.add_argument('-f', '--footprint_disable', action='store_true', help='Disable patching of footprint editor colour definition')
 parser.add_argument('-e', '--eeschema_disable', action='store_true', help='Disable patching of eeschema and symbol editor colour definition')
@@ -71,7 +71,18 @@ if not args.eeschema_disable:
         print("Scheme does not contain a definition for EESchema, skipped.")
     else:
         print("Updating EESchema configuration.")
-        eeschema_handler = ConfigFile(args.config_dir[0] / 'eeschema')
+        ee_config = args.config_dir[0] / 'eeschema'
+        try:
+            shutil.copy(ee_config, str(ee_config)+".bak")
+        except:
+            answer = input("Unable to create backup file. Continue anyways? [y/n] ")
+            while(answer not in ['y', 'n']):
+                answer = input("Unable to create backup file. Continue anyways? [y/n] ")
+            if answer == 'n':
+                exit()
+
+
+        eeschema_handler = ConfigFile(ee_config)
         eeschema_handler.patch(ee_patch)
         eeschema_handler.write()
 
@@ -79,7 +90,17 @@ if args.pcb_disable and args.footprint_disable:
     print("Done")
     exit()
 
-pcb_handler = ConfigFile(args.config_dir[0] / 'pcbnew')
+pcb_config = args.config_dir[0] / 'pcbnew'
+try:
+    shutil.copy(pcb_config, str(pcb_config)+".bak")
+except:
+    answer = input("Unable to create backup file. Continue anyways? [y/n] ")
+    while(answer not in ['y', 'n']):
+        answer = input("Unable to create backup file. Continue anyways? [y/n] ")
+    if answer == 'n':
+        exit()
+
+pcb_handler = ConfigFile(pcb_config)
 
 if not args.pcb_disable:
     pcb_patch = args.scheme_path[0] / 'pcbnew'
