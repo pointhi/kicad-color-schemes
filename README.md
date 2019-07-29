@@ -16,13 +16,12 @@ The pcbnew config file content has been split into the sections responsible for 
 
 ## Automatic patcher
 
-You can use patch.py to automatically patch the configuration files. The python script searches for settings that have to be overwritten and appends all new settings to the end of the file.
+An automatic patch script can be used to transfer a colour scheme into your KiCad settings files. Make sure KiCad is closed before using it.
 
-`python3.6 patch.py <patch file> <config file>`
+The script expects the directory containing the colour scheme and the kicad config directory as arguments. Switches are included to disable transfer of a particular part of the scheme definition. (use --help for detailed instructions.) A bakup of your settings files is created before changes are made.
 
-For example:
-
-`python3.6 patch.py ~/kicad-color-schemes/blue-green-dark/pcbnew ~/.config/kicad/pcbnew`
+Example:
+`python3 patch.py ~/kicad-color-schemes/blue-green-dark/ ~/.config/kicad/`
 
 ## eeschema
 
