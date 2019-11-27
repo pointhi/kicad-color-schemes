@@ -13,7 +13,8 @@ class ConfigFile():
             idx = 0
             for line in file:
                 l = line.strip()
-                if l != '':
+                #print(line.startswith('#'), line)
+                if l != '' and not (line.startswith('[') or line.startswith('#')):
                     try:
                         key, value = l.split('=', 1)
                     except:
@@ -26,7 +27,7 @@ class ConfigFile():
             idx = 0
             for line in file:
                 l = line.strip()
-                if l == '':
+                if l == '' or (line.startswith('[') or line.startswith('#')):
                     continue
 
                 try:
@@ -112,7 +113,7 @@ if not args.pcb_disable:
 
 if not args.footprint_disable:
     fpe_patch = args.scheme_path[0] / 'footprint_editor'
-    if not pcb_patch.is_file():
+    if not fpe_patch.is_file():
         print("Scheme does not contain a definition for the footprint editor, skipped.")
     else:
         print("Updating footprint editor configuration.")
