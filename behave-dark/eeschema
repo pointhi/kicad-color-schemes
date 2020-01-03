@@ -26,7 +26,12 @@ Color4DErcEEx=rgb(200, 68, 85)
 Color4DGridEx=rgb(132, 132, 132)
 Color4DBgCanvasEx=rgb(35, 41, 50)
 Color4DBrighenedEx=rgb(201, 169, 249)
+Color4DBrightenedEx=rgb(201, 169, 249)
 
 LibeditFrameGridColor=rgb(132, 132, 132)
 
 ViewlibFrameGridColor=rgb(132, 132, 132)
+
+Color4DCursorEx=rgb(211, 211, 211)
+Color4DHiddenEx=rgb(194, 194, 194)
+Color4DWorksheetEx=rgb(211, 211, 211)
