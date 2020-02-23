@@ -23,6 +23,20 @@ The script expects the directory containing the colour scheme and the kicad conf
 Example:
 `python3 patch.py ~/kicad-color-schemes/blue-green-dark/ ~/.config/kicad/`
 
+## JSON themes (for KiCad 6, and "5.99" nightly builds after February 2020)
+
+KiCad 6 is changing to a JSON-based colour theme system.  Recent nightly builds already support the
+new system, where each colour theme lives in a JSON file in the `colors` directory of the user
+settings path (see "How to use a colour theme" above.)
+
+To use the JSON version of a theme, just copy the file into your `colors` directory.  The next time
+you run KiCad, it will detect the new theme file and you will be able to choose it in the
+preferences.  Each KiCad application can use a different color theme if you wish.
+
+In the new system, the footprint editor and PcbNew use the same color theme.  If you would like to
+have different colours for those two applications, the way to do it is to choose a different theme
+file in the PcbNew and footprint editor preferences dialogs.
+
 ## eeschema
 
 color-scheme                                               | screenshot
