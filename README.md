@@ -48,6 +48,7 @@ color-scheme                                               | screenshot
 **blue-tone**     | ![Blue tone theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-tone/eeschema.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/eeschema.png)
 **neon** *Inspired by forum user BobZ*      | ![Neon coloured theme inspired by forum user BobZ](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/neon/eeschema.png)
+**monokai** *Inspired by forum user kickofighto*    | ![Dark theme based on monokai](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/monokai/eeschema.png)
 
 ## pcbnew
 color-scheme                                               | screenshot
