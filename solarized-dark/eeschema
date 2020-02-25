@@ -24,3 +24,9 @@ Color4DErcEEx=rgb(220, 50, 47)
 Color4DGridEx=rgb(147, 161, 161)
 Color4DBgCanvasEx=rgb(0, 43, 54)
 Color4DBrighenedEx=rgb(211, 54, 130)
+Color4DBrightenedEx=rgb(211, 54, 130)
+
+
+Color4DCursorEx=rgb(211, 211, 211)
+Color4DHiddenEx=rgb(58, 103, 115)
+Color4DWorksheetEx=rgb(211, 211, 211)
