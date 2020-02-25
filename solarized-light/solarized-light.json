@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "filename": "solarized-light",
+    "name": "Solarized Light",
+    "version": 0
+  },
+  "schematic": {
+    "background": "rgb(253, 246, 227)",
+    "brightened": "rgb(211, 54, 130)",
+    "bus": "rgb(38, 139, 210)",
+    "component_body": "rgb(238, 232, 213)",
+    "component_outline": "rgb(88, 110, 117)",
+    "erc_error": "rgb(220, 50, 47)",
+    "erc_warning": "rgb(220, 50, 47)",
+    "fields": "rgb(147, 161, 161)",
+    "grid": "rgb(88, 110, 117)",
+    "junction": "rgb(133, 153, 0)",
+    "label_global": "rgb(42, 161, 152)",
+    "label_hier": "rgb(42, 161, 152)",
+    "label_local": "rgb(42, 161, 152)",
+    "net_name": "rgb(0, 0, 0)",
+    "no_connect": "rgb(108, 113, 196)",
+    "note": "rgb(88, 110, 117)",
+    "pin": "rgb(88, 110, 117)",
+    "pin_name": "rgb(203, 75, 22)",
+    "pin_number": "rgb(181, 137, 0)",
+    "reference": "rgb(38, 139, 210)",
+    "sheet": "rgb(88, 110, 117)",
+    "sheet_filename": "rgb(38, 139, 210)",
+    "sheet_label": "rgb(203, 75, 22)",
+    "sheet_name": "rgb(108, 113, 196)",
+    "value": "rgb(108, 113, 196)",
+    "wire": "rgb(133, 153, 0)"
+  }
+}

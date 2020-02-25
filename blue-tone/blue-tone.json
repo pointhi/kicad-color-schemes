@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "filename": "blue-tone",
+    "name": "Blue Tone",
+    "version": 0
+  },
+  "schematic": {
+    "background": "rgb(255, 255, 255)",
+    "brightened": "rgb(255, 0, 255)",
+    "bus": "rgb(110, 59, 160)",
+    "component_body": "rgb(210, 212, 255)",
+    "component_outline": "rgb(49, 49, 132)",
+    "cursor": "rgb(0, 0, 0)",
+    "erc_error": "rgb(180, 53, 53)",
+    "erc_warning": "rgb(255, 139, 0)",
+    "fields": "rgb(0, 103, 132)",
+    "grid": "rgb(0, 0, 0)",
+    "hidden": "rgb(194, 194, 194)",
+    "junction": "rgb(66, 132, 55)",
+    "label_global": "rgb(132, 39, 132)",
+    "label_hier": "rgb(84, 38, 130)",
+    "label_local": "rgb(0, 0, 0)",
+    "net_name": "rgb(132, 132, 132)",
+    "no_connect": "rgb(93, 0, 132)",
+    "note": "rgb(0, 0, 194)",
+    "pin": "rgb(61, 51, 132)",
+    "pin_name": "rgb(65, 29, 100)",
+    "pin_number": "rgb(90, 78, 202)",
+    "reference": "rgb(58, 115, 132)",
+    "sheet": "rgb(82, 61, 101)",
+    "sheet_filename": "rgb(0, 132, 132)",
+    "sheet_label": "rgb(85, 39, 132)",
+    "sheet_name": "rgb(0, 132, 132)",
+    "value": "rgb(58, 116, 132)",
+    "wire": "rgb(66, 132, 55)",
+    "worksheet": "rgb(0, 0, 27)"
+  }
+}
