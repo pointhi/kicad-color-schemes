@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "filename": "monokai",
+    "name": "monokai",
+    "version": 0
+  },
+  "schematic": {
+    "background": "rgb(59, 58, 50)",
+    "brightened": "rgb(248, 248, 242)",
+    "bus": "rgb(102, 217, 239)",
+    "component_body": "rgb(73, 72, 62)",
+    "component_outline": "rgb(249, 38, 114)",
+    "cursor": "rgb(230, 220, 180)",
+    "erc_error": "rgb(249, 38, 114)",
+    "erc_warning": "rgb(166, 226, 46)",
+    "fields": "rgb(174, 129, 255)",
+    "grid": "rgb(150, 148, 127)",
+    "hidden": "rgb(150, 148, 127)",
+    "junction": "rgb(166, 226, 46)",
+    "label_global": "rgb(249, 38, 114)",
+    "label_hier": "rgb(255, 231, 146)",
+    "label_local": "rgb(248, 248, 242)",
+    "net_name": "rgb(117, 113, 94)",
+    "no_connect": "rgb(102, 217, 239)",
+    "note": "rgb(253, 151, 31)",
+    "pin": "rgb(249, 38, 114)",
+    "pin_name": "rgb(102, 217, 239)",
+    "pin_number": "rgb(249, 38, 114)",
+    "reference": "rgb(102, 217, 239)",
+    "sheet": "rgb(174, 129, 255)",
+    "sheet_filename": "rgb(255, 231, 146)",
+    "sheet_label": "rgb(255, 231, 146)",
+    "sheet_name": "rgb(102, 217, 239)",
+    "value": "rgb(102, 217, 239)",
+    "wire": "rgb(166, 226, 46)",
+    "worksheet": "rgb(99, 87, 120)"
+  }
+}
