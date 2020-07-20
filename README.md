@@ -48,6 +48,7 @@ color-scheme                                               | screenshot
 **blue-tone**     | ![Blue tone theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-tone/eeschema.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/eeschema.png)
 **neon** *Inspired by forum user BobZ*      | ![Neon coloured theme inspired by forum user BobZ](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/neon/eeschema.png)
+**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/eeschema.png)
 **monokai** *Inspired by forum user kickofighto*    | ![Dark theme based on monokai](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/monokai/eeschema.png)
 
 ## pcbnew
@@ -56,6 +57,7 @@ color-scheme                                               | screenshot
 **kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/pcbnew.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/pcbnew.png)
 **blue-green-dark**     | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/pcbnew.png)
+**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/pcbnew.png)
 
 ## footprint editor
 color-scheme                                               | screenshot
@@ -63,3 +65,4 @@ color-scheme                                               | screenshot
 **kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/footprint_editor.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/footprint_editor.png)
 **blue-green-dark**                                        | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/footprint_editor.png)
+**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/footprint_editor.png)
