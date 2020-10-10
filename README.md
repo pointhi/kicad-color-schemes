@@ -50,6 +50,7 @@ color-scheme                                               | screenshot
 **neon** *Inspired by forum user BobZ*      | ![Neon coloured theme inspired by forum user BobZ](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/neon/eeschema.png)
 **nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/eeschema.png)
 **monokai** *Inspired by forum user kickofighto*    | ![Dark theme based on monokai](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/monokai/eeschema.png)
+**eagle** *Designed by DX-MON, Inspired by EagleCAD*       | ![Dark theme based on Eagle](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/eeschema.png)
 
 ## pcbnew
 color-scheme                                               | screenshot
@@ -58,6 +59,7 @@ color-scheme                                               | screenshot
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/pcbnew.png)
 **blue-green-dark**     | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/pcbnew.png)
 **nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/pcbnew.png)
+**eagle** *Designed by DX-MON, Inspired by EagleCAD*       | ![Loosely based on Eagle's dark theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/pcbnew.png)
 
 ## footprint editor
 color-scheme                                               | screenshot
@@ -66,3 +68,4 @@ color-scheme                                               | screenshot
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/footprint_editor.png)
 **blue-green-dark**                                        | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/footprint_editor.png)
 **nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/footprint_editor.png)
+**eagle** *Designed by DX-MON, Inspired by EagleCAD*       | ![Loosely based on Eagle's dark theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/footprint_editor.png)
