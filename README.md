@@ -41,7 +41,8 @@ file in the PcbNew and footprint editor preferences dialogs.
 
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
-**kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/eeschema.png)
+**kicad-classic**                                          | ![Default theme for KiCad 5.x and earlier](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-classic/eeschema.png)
+**kicad-2020**                                             | ![Default theme for KiCad 6.0](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-2020/eeschema.png)
 **solarized-dark** *http://ethanschoonover.com/solarized*  | ![Dark theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/eeschema.png)
 **solarized-light** *http://ethanschoonover.com/solarized* | ![Light theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/eeschema.png)
 **sw**                                                     | ![simple black/white theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/sw/eeschema.png)
@@ -55,7 +56,8 @@ color-scheme                                               | screenshot
 ## pcbnew
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
-**kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/pcbnew.png)
+**kicad-classic**                                          | ![Default theme for KiCad 5.x and earlier](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-classic/pcbnew.png)
+**kicad-2020**                                             | ![Default theme for KiCad 6.0](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-2020/pcbnew.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/pcbnew.png)
 **blue-green-dark**     | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/pcbnew.png)
 **nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/pcbnew.png)
@@ -64,7 +66,8 @@ color-scheme                                               | screenshot
 ## footprint editor
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
-**kicad-default**                                          | ![Default theme by KiCad](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-default/footprint_editor.png)
+**kicad-classic**                                          | ![Default theme for KiCad 5.x and earlier](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-classic/footprint_editor.png)
+**kicad-2020**                                             | ![Default theme for KiCad 6.0](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-2020/footprint_editor.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/footprint_editor.png)
 **blue-green-dark**                                        | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/footprint_editor.png)
 **nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/footprint_editor.png)
