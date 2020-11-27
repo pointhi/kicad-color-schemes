@@ -12,8 +12,8 @@ PYTHON=$(VENV_NAME)/bin/python$(PYTHON_VERSION)
 # execute that selection to update the theme. This will also save a backup of the
 # original eeschema file in the event the user wants to revert to previous settings. 
 .PHONY: theme
-theme: venv-update
-	$(PYTHON) scripts/theme_selection.py $(BACKUP_DIR) $(THEME_DIR)
+theme:
+	python$(PYTHON_VERSION) scripts/theme_selection.py $(BACKUP_DIR) $(THEME_DIR)
 	
 # Creates the Python virtual environment and syncs it with resources/requirements.txt.
 .PHONY: venv-update

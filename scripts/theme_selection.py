@@ -156,7 +156,7 @@ def install_theme(backup_dir, theme_dir, theme):
         print("[Info] Installing Theme: {}".format(theme))
         print('[Info] SRC:  {}/eeschema'.format(theme_config_path))
         print('[Info] DEST: {}/eeschema\n'.format(str(get_eeschema_path())))
-        os.system('_venv/bin/python3 scripts/patch.py {} {}'.format( \
+        os.system('python3 scripts/patch.py {} {}'.format( \
             str(theme_config_path), str(get_eeschema_path())))
 
 def main():
