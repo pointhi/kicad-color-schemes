@@ -1,0 +1,8 @@
+# Virtual Environment
+_venv/
+
+# eeschema Backup
+_backup/
+
+# Pycache
+scripts/__pycache__/
