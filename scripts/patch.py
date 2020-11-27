@@ -13,7 +13,6 @@ class ConfigFile():
             idx = 0
             for line in file:
                 l = line.strip()
-                #print(line.startswith('#'), line)
                 if l != '' and not (line.startswith('[') or line.startswith('#')):
                     try:
                         key, value = l.split('=', 1)
@@ -42,6 +41,7 @@ class ConfigFile():
         with open(self.filepath, 'w') as file:
             for key, value in self.content.items():
                 print("{}={}".format(key, value), file=file)
+            file.close()
 
 parser = argparse.ArgumentParser(description='Patch the KiCad settings file with the given colour scheme.')
 parser.add_argument('scheme_path', type=Path, nargs=1,
@@ -60,6 +60,7 @@ if args.pcb_disable and args.footprint_disable and args.eeschema_disable:
     exit()
 
 if not args.config_dir[0].is_dir():
+    print(args.config_dir[0])
     print("'{}' expected to be the kicad config directory but it is not a directory or does not exist. (Use --help for instructions.)".format(args.config_dir[0]))
     exit()
 
@@ -73,15 +74,6 @@ if not args.eeschema_disable:
     else:
         print("Updating EESchema configuration.")
         ee_config = args.config_dir[0] / 'eeschema'
-        try:
-            shutil.copy(ee_config, str(ee_config)+".bak")
-        except:
-            answer = input("Unable to create backup file. Continue anyways? [y/n] ")
-            while(answer not in ['y', 'n']):
-                answer = input("Unable to create backup file. Continue anyways? [y/n] ")
-            if answer == 'n':
-                exit()
-
 
         eeschema_handler = ConfigFile(ee_config)
         eeschema_handler.patch(ee_patch)
