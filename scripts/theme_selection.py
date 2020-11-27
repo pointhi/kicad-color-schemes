@@ -18,7 +18,8 @@ def error(err_msg):
     """
     print('[Error] {}\n'.format(err_msg))
     print('        Run patch.py and manually point to your desired theme and eeschema location')
-    print('        IMPORTANT NOTE: You will need to back up your eeschema file manually FIRST\n')
+    print('        ')
+    print('        IMPORTANT NOTE: You will need to back up your eeschema file manually FIRST!\n')
     sys.exit(1)
 
 def get_eeschema_path():
@@ -38,8 +39,7 @@ def get_eeschema_path():
     elif sys.platform == 'darwin':
         eeschema_path = os.path.join(os.getenv('HOME'), 'Library/Preferences/kicad')
     elif sys.platform == 'win32':
-        # eeschema_path = os.path.join('c:/', 'Users', os.getlogin(), 'AppData', 'Roaming', 'kicad')
-        eeschema_path = os.path.join('c:/', 'Program Files', 'KiCAD', 'bin')
+        eeschema_path = os.path.join('c:\\', 'Users', os.getlogin(), 'AppData', 'Roaming', 'kicad')
     else:
         error('Unsupported OS detected.')
 

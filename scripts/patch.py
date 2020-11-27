@@ -68,12 +68,12 @@ if not args.scheme_path[0].is_dir():
     print("'{}' expected to be the colour scheme definition directory but it is not a directory or does not exist. (Use --help for instructions.)".format(args.scheme_path[0]))
 
 if not args.eeschema_disable:
-    ee_patch = args.scheme_path[0] / 'eeschema'
-    if not ee_patch.is_file():
+    ee_patch = os.path.join(args.scheme_path[0], 'eeschema')
+    if not Path(ee_patch).is_file():
         print("Scheme does not contain a definition for EESchema, skipped.")
     else:
         print("Updating EESchema configuration.")
-        ee_config = args.config_dir[0] / 'eeschema'
+        ee_config = os.path.join(args.config_dir[0], 'eeschema')
 
         eeschema_handler = ConfigFile(ee_config)
         eeschema_handler.patch(ee_patch)
@@ -83,7 +83,7 @@ if args.pcb_disable and args.footprint_disable:
     print("Done")
     exit()
 
-pcb_config = args.config_dir[0] / 'pcbnew'
+pcb_config = os.path.join(args.config_dir[0], 'pcbnew')
 try:
     shutil.copy(pcb_config, str(pcb_config)+".bak")
 except:
@@ -96,16 +96,16 @@ except:
 pcb_handler = ConfigFile(pcb_config)
 
 if not args.pcb_disable:
-    pcb_patch = args.scheme_path[0] / 'pcbnew'
-    if not pcb_patch.is_file():
+    pcb_patch = os.path.join(args.scheme_path[0], 'pcbnew')
+    if not Path(pcb_patch).is_file():
         print("Scheme does not contain a definition for pcb_new, skipped.")
     else:
         print("Updating pcb_new configuration.")
         pcb_handler.patch(pcb_patch)
 
 if not args.footprint_disable:
-    fpe_patch = args.scheme_path[0] / 'footprint_editor'
-    if not fpe_patch.is_file():
+    fpe_patch = os.path.join(args.scheme_path[0], 'footprint_editor')
+    if not Path(fpe_patch).is_file():
         print("Scheme does not contain a definition for the footprint editor, skipped.")
     else:
         print("Updating footprint editor configuration.")
