@@ -84,15 +84,6 @@ if args.pcb_disable and args.footprint_disable:
     exit()
 
 pcb_config = os.path.join(args.config_dir[0], 'pcbnew')
-try:
-    shutil.copy(pcb_config, str(pcb_config)+".bak")
-except:
-    answer = input("Unable to create backup file. Continue anyways? [y/n] ")
-    while(answer not in ['y', 'n']):
-        answer = input("Unable to create backup file. Continue anyways? [y/n] ")
-    if answer == 'n':
-        exit()
-
 pcb_handler = ConfigFile(pcb_config)
 
 if not args.pcb_disable:

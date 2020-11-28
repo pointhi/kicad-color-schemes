@@ -1,5 +1,4 @@
 # Directory Configurations
-BACKUP_DIR=_backup
 THEME_DIR=themes
 
 # Python Virtual Environment Configurations 
@@ -13,7 +12,7 @@ PYTHON=$(VENV_NAME)/bin/python$(PYTHON_VERSION)
 # original eeschema file in the event the user wants to revert to previous settings. 
 .PHONY: theme
 theme:
-	python$(PYTHON_VERSION) scripts/theme_selection.py $(BACKUP_DIR) $(THEME_DIR)
+	python$(PYTHON_VERSION) scripts/theme_selection.py $(THEME_DIR)
 	
 # Creates the Python virtual environment and syncs it with resources/requirements.txt.
 .PHONY: venv-update
