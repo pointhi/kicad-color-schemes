@@ -1,27 +1,76 @@
 # kicad-color-schemes
 
-Want to change the color scheme of KiCad? Look here for inspiration.
+Want to change the color scheme of KiCad? You've come to the right place!
 
-## How to use a colour theme.
+## How to select & install a theme
 
-Every theme directory contains the colour definition parts of the eeschema and pcbnew setup files found in your personal profile.
-- For Linux under ~.config/kicad/
-- Windows XP: “C:\Documents and Settings\username\Application Data” + kicad (= %APPDATA%\kicad)
-- Windows Vista & later: “C:\Users\username\AppData\Roaming” + kicad (= %APPDATA%\kicad)
-- OSX: The user’s home directory + /Library/Preferences/kicad
+The instructions below assume the following:
+* The user is using a command line interface (CLI).
+* The user has Python3 installed. 
 
-Use a text editor to overwrite the relevant sections with the data found in the files in this folder. **Make sure you create a backup first.**
+1. Clone this repository.
 
-The pcbnew config file content has been split into the sections responsible for the footprint editor and the one for pcbnew. This is done to allow you to more easily mix and match different schemes for different tools.
+```bash
+git clone https://github.com/pointhi/kicad-color-schemes.git
+```
 
-## Automatic patcher
+2. Close KiCad. Note: **The theme will not be updated unless KiCad is closed**.
+3. Navigate into the top-level of the cloned repository.
+4. Enter `make` or `make theme` in the CLI. 
+5. Select the number corresponding to the theme you wish to install.
+6. Start KiCad and enjoy your new theme!
 
-An automatic patch script can be used to transfer a colour scheme into your KiCad settings files. Make sure KiCad is closed before using it.
+## How it works
 
-The script expects the directory containing the colour scheme and the kicad config directory as arguments. Switches are included to disable transfer of a particular part of the scheme definition. (use --help for detailed instructions.) A bakup of your settings files is created before changes are made.
+User settings for the `eeschema` schematic editor, `pcbnew` layout tool, and the footprint editor are
+all stored in user preference files called `eeschema` and `pcbnew` (without file extensions). The
+specific keys within those files that correspond to visual appearance for the tool is done through the
+![Color4D Class](https://docs.kicad.org/doxygen/classKIGFX_1_1COLOR4D.html). At the preference
+file-level, this would look like: `Color4DPinNameEx=rgb(67, 76, 94)`. By changing the red/green/blue
+color values, the appearance of a given element can be changed. 
 
-Example:
-`python3 patch.py ~/kicad-color-schemes/blue-green-dark/ ~/.config/kicad/`
+The **kicad-color-schemes** scripts automatically apply user-selected themes through the following:
+1. The Makefile `theme` target calls the `theme_selection.py` script.
+2. The `theme_selection.py` script automatically makes backups of available user preference files.
+   Note: These files are kept in the same directory as the originals, but with a `.bak` extension. 
+3. The `theme_selection.py` script scans the `themes` directory and finds all available themes. 
+4. Identified themes are displayed to the user where the user enters a number selection corresponding
+   to a theme. 
+5. `patch.py` is called to set the selected theme for all supported tool elements that theme has available.
+
+As an important note: **Not all themes contain support for all tool elements**.
+For example, `base16_dracula` currently only has support for the eeschema tool, so pcbnew and footprint editor
+will continue to look the same. 
+
+If you would like to see the limited themes grow and have more effect, please consider supporting this project
+by adding configurations for our currently limited themes!
+
+## Manually settings themes
+
+There may be cases where the user wishes to set the themes manually. These may include:
+
+* Running an unsupported operating system or custom KiCad installation which results in 
+  the scripts being unable to automatically find the user preference files.
+* Wanting to set different themes for eeschema, pcbnew, and footprint editor. 
+* Wanting to supply a custom theme from another directory 
+  (Note: New themes can be included simply by adding a new folder to the `themes` directory)
+
+Regardless of the specific reason, the user is able to call the `patch.py` script with arguments to the
+selected theme folder as well as the user preference configuration folder. The following code block
+demonstrates this:
+
+```bash
+# From the top-level of the cloned repository
+python3 scripts/patch.py <themes/selected-theme/> <path/to/your/eeschema/folder/>
+```
+
+Some optional arguments are also available: 
+
+Optional Argument          | Description
+-------------------------- | ------------
+`-e`,`--eeschema_disable`  | Disable updating the theme of the schematic editor
+`-f`,`--footprint_disable` | Disable updating the theme of the footprint editor
+`-p`,`--pcb_disable`       | Disable updating the theme of the PCB editor
 
 ## JSON themes (for KiCad 6, and "5.99" nightly builds after February 2020)
 
@@ -41,34 +90,61 @@ file in the PcbNew and footprint editor preferences dialogs.
 
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
-**kicad-classic**                                          | ![Default theme for KiCad 5.x and earlier](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-classic/eeschema.png)
-**kicad-2020**                                             | ![Default theme for KiCad 6.0](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-2020/eeschema.png)
-**solarized-dark** *http://ethanschoonover.com/solarized*  | ![Dark theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/eeschema.png)
-**solarized-light** *http://ethanschoonover.com/solarized* | ![Light theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/eeschema.png)
-**sw**                                                     | ![simple black/white theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/sw/eeschema.png)
-**blue-tone**     | ![Blue tone theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-tone/eeschema.png)
-**behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/eeschema.png)
-**neon** *Inspired by forum user BobZ*      | ![Neon coloured theme inspired by forum user BobZ](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/neon/eeschema.png)
-**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/eeschema.png)
-**monokai** *Inspired by forum user kickofighto*    | ![Dark theme based on monokai](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/monokai/eeschema.png)
-**eagle** *Designed by DX-MON, Inspired by EagleCAD*       | ![Dark theme based on Eagle](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/eeschema.png)
+**base16_dracula** *[From skalidindi3](https://github.com/skalidindi3/kicad-colors)* | ![base16_dracula eeschema][base16_dracula-eeschema-link]
+**base16_nord** *[From skalidindi3](https://github.com/skalidindi3/kicad-colors)* | ![base16_nord eeschema][base16_nord-eeschema-link]
+**base16_oceanicnext** *[From skalidindi3](https://github.com/skalidindi3/kicad-colors)* | ![base16_oceanicnext eeschema][base16_oceanicnext-eeschema-link]
+**base16_onedark** *[From skalidindi3](https://github.com/skalidindi3/kicad-colors)* | ![base16_onedark eeschema][base16_onedark-eeschema-link]
+**base16_rebecca** *[From skalidindi3](https://github.com/skalidindi3/kicad-colors)* | ![base16_rebecca eeschema][base16_rebecca-eeschema-link]
+**behave-dark** *[Behave Theme](https://atom.io/themes/behave-theme)* | ![behave-dark eeschema][behave-dark-eeschema-link]
+**blue-tone** | ![blue-tone eeschema][blue-tone-eeschema-link]
+**eagle** *Designed by DX-MON, Inspired by EagleCAD* | ![eagle eeschema][eagle-eeschema-link]
+**handpicked_nord** *[Nord](https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim)* | ![handpicked_nord eeschema][handpicked_nord-eeschema-link]
+**handpicked_onedark** *[Onehalf Dark](https://github.com/sonph/onehalf/blob/master/vim/colors/onehalfdark.vim)* | ![handpicked_onedark eeschema][handpicked_onedark-eeschema-link]
+**kicad-2020** | ![kicad-2020 eeschema][kicad-202-eeschema-link]
+**kicad-classic** | ![kicad-classic eeschema][kicad-classic-eeschema-link]
+**monokai** *Inspired by forum user kickofighto* | ![monokai eeschema][monokai-eeschema-link]
+**neon** *Inspired by forum user BobZ* | ![neon eeschema][neon-eeschema-link]
+**nord** *Designed by @0xdec* | ![nord eeschema][nord-eeschema-link]
+**solarized-dark** *[Solarized](http://ethanschoonover.com/solarized)* | ![solarized-dark eeschema][solarized-dark-eeschema-link]
+**solarized-light** *[Solarized](http://ethanschoonover.com/solarized)* | ![solarized-light eeschema][solarized-light-eeschema-link]
+**sw** | ![sw eeschema][sw-eeschema-link]
 
 ## pcbnew
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
-**kicad-classic**                                          | ![Default theme for KiCad 5.x and earlier](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-classic/pcbnew.png)
-**kicad-2020**                                             | ![Default theme for KiCad 6.0](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-2020/pcbnew.png)
-**behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/pcbnew.png)
-**blue-green-dark**     | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/pcbnew.png)
-**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/pcbnew.png)
-**eagle** *Designed by DX-MON, Inspired by EagleCAD*       | ![Loosely based on Eagle's dark theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/pcbnew.png)
+**kicad-classic** | ![Default theme for KiCad 5.x and earlier](themes/kicad-classic/pcbnew.png)
+**kicad-2020** | ![Default theme for KiCad 6.0](themes/kicad-2020/pcbnew.png)
+**behave-dark** *https://atom.io/themes/behave-theme* | ![Dark theme based on behave](themes/behave-dark/pcbnew.png)
+**blue-green-dark** | ![Dark theme using blue and green](themes/blue-green-dark/pcbnew.png)
+**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](themes/nord/pcbnew.png)
+**eagle** *Designed by DX-MON, Inspired by EagleCAD* | ![Loosely based on Eagle's dark theme](themes/eagle/pcbnew.png)
 
 ## footprint editor
 color-scheme                                               | screenshot
 -----------------------------------------------------------|-----------
-**kicad-classic**                                          | ![Default theme for KiCad 5.x and earlier](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-classic/footprint_editor.png)
-**kicad-2020**                                             | ![Default theme for KiCad 6.0](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-2020/footprint_editor.png)
-**behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/footprint_editor.png)
-**blue-green-dark**                                        | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/footprint_editor.png)
-**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/footprint_editor.png)
-**eagle** *Designed by DX-MON, Inspired by EagleCAD*       | ![Loosely based on Eagle's dark theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/footprint_editor.png)
+**kicad-classic** | ![Default theme for KiCad 5.x and earlier](themes/kicad-classic/footprint_editor.png)
+**kicad-2020** | ![Default theme for KiCad 6.0](themes/kicad-2020/footprint_editor.png)
+**behave-dark** *https://atom.io/themes/behave-theme* | ![Dark theme based on behave](themes/behave-dark/footprint_editor.png)
+**blue-green-dark** | ![Dark theme using blue and green](themes/blue-green-dark/footprint_editor.png)
+**nord** *Designed by @0xdec* | ![based on the nordtheme color palette](themes/nord/footprint_editor.png)
+**eagle** *Designed by DX-MON, Inspired by EagleCAD* | ![Loosely based on Eagle's dark theme](themes/eagle/footprint_editor.png)
+
+
+[base16_dracula-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_dracula/eeschema.png
+[base16_nord-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_nord/eeschema.png
+[base16_oceanicnext-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_oceanicnext/eeschema.png
+[base16_onedark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_onedark/eeschema.png
+[base16_rebecca-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_rebecca/eeschema.png
+[behave-dark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/behave-dark/eeschema.png
+[blue-tone-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/blue-tone/eeschema.png
+[eagle-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/eagle/eeschema.png
+[handpicked_nord-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/handpicked_nord/eeschema.png
+[handpicked_onedark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/handpicked_onedark/eeschema.png
+[kicad-202-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/kicad-2020/eeschema.png
+[kicad-classic-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/kicad-classic/eeschema.png
+[monokai-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/monokai/eeschema.png
+[neon-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/neon/eeschema.png
+[nord-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/nord/eeschema.png
+[solarized-dark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/solarized-dark/eeschema.png
+[solarized-light-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/solarized-light/eeschema.png
+[sw-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/sw/eeschema.png
