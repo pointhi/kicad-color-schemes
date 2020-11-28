@@ -92,7 +92,7 @@ if a new theme was being picked (see above for more detailed instructions), and 
 This option will always be reserved for restoring a backup. If this option is selected, the script
 will overwrite the existing eeschema and pcbnew configuration files with the original. 
 
-**Any configuration changes made after a backup was created will be lost if a backup is restored**.
+:exclamation: **Any configuration changes made after a backup was created will be lost if a backup is restored**.
 To generate a new backup, simply delete the `eeschema.bak` and `pcbnew.bak` files from the path
 listed in the table above and then re-run the script with `make` at the top-level of the cloned
 repository. 
@@ -155,21 +155,21 @@ color-scheme                                               | screenshot
 **eagle** *Designed by DX-MON, Inspired by EagleCAD* | ![Loosely based on Eagle's dark theme](themes/eagle/footprint_editor.png)
 
 
-[base16_dracula-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_dracula/eeschema.png
-[base16_nord-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_nord/eeschema.png
-[base16_oceanicnext-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_oceanicnext/eeschema.png
-[base16_onedark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_onedark/eeschema.png
-[base16_rebecca-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/base16_rebecca/eeschema.png
-[behave-dark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/behave-dark/eeschema.png
-[blue-tone-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/blue-tone/eeschema.png
-[eagle-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/eagle/eeschema.png
-[handpicked_nord-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/handpicked_nord/eeschema.png
-[handpicked_onedark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/handpicked_onedark/eeschema.png
-[kicad-202-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/kicad-2020/eeschema.png
-[kicad-classic-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/kicad-classic/eeschema.png
-[monokai-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/monokai/eeschema.png
-[neon-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/neon/eeschema.png
-[nord-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/nord/eeschema.png
-[solarized-dark-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/solarized-dark/eeschema.png
-[solarized-light-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/solarized-light/eeschema.png
-[sw-eeschema-link]: https://raw.githubusercontent.com/ddm9599/kicad-color-schemes/master/themes/sw/eeschema.png
+[base16_dracula-eeschema-link]: themes/base16_dracula/eeschema.png
+[base16_nord-eeschema-link]: themes/base16_nord/eeschema.png
+[base16_oceanicnext-eeschema-link]: themes/base16_oceanicnext/eeschema.png
+[base16_onedark-eeschema-link]: themes/base16_onedark/eeschema.png
+[base16_rebecca-eeschema-link]: themes/base16_rebecca/eeschema.png
+[behave-dark-eeschema-link]: themes/behave-dark/eeschema.png
+[blue-tone-eeschema-link]: themes/blue-tone/eeschema.png
+[eagle-eeschema-link]: themes/eagle/eeschema.png
+[handpicked_nord-eeschema-link]: themes/handpicked_nord/eeschema.png
+[handpicked_onedark-eeschema-link]: themes/handpicked_onedark/eeschema.png
+[kicad-202-eeschema-link]: themes/kicad-2020/eeschema.png
+[kicad-classic-eeschema-link]: themes/kicad-classic/eeschema.png
+[monokai-eeschema-link]: themes/monokai/eeschema.png
+[neon-eeschema-link]: themes/neon/eeschema.png
+[nord-eeschema-link]: themes/nord/eeschema.png
+[solarized-dark-eeschema-link]: themes/solarized-dark/eeschema.png
+[solarized-light-eeschema-link]: themes/solarized-light/eeschema.png
+[sw-eeschema-link]: themes/sw/eeschema.png
