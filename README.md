@@ -1,8 +1,8 @@
 # kicad-color-schemes
 
-Want to change the color scheme of KiCad? You've come to the right place!
+Want to change the color scheme of your KiCad? You've come to the right place!
 
-## How to select & install a theme
+## How to Select & Install a Theme
 
 The instructions below assume the following:
 * The user is using a command line interface (CLI).
@@ -20,22 +20,21 @@ git clone https://github.com/pointhi/kicad-color-schemes.git
 5. Select the number corresponding to the theme you wish to install.
 6. Start KiCad and enjoy your new theme!
 
-## How it works
+## How it Works
 
 User settings for the `eeschema` schematic editor, `pcbnew` layout tool, and the footprint editor are
 all stored in user preference files called `eeschema` and `pcbnew` (without file extensions). The
 specific keys within those files that correspond to visual appearance for the tool is done through the
-![Color4D Class](https://docs.kicad.org/doxygen/classKIGFX_1_1COLOR4D.html). At the preference
-file-level, this would look like: `Color4DPinNameEx=rgb(67, 76, 94)`. By changing the red/green/blue
-color values, the appearance of a given element can be changed. 
+[Color4D Class](https://docs.kicad.org/doxygen/classKIGFX_1_1COLOR4D.html). The user preference
+files are composed of keys and values like: `Color4DPinNameEx=rgb(67, 76, 94)`. By changing the red/green/blue
+color values, the visual appearance of a given element can be altered. 
 
 The **kicad-color-schemes** scripts automatically apply user-selected themes through the following:
 1. The Makefile `theme` target calls the `theme_selection.py` script.
-2. The `theme_selection.py` script automatically makes backups of available user preference files.
+2. The `theme_selection.py` script automatically makes backups of **eeschema** and **pcbnew** preference files.
    Note: These files are kept in the same directory as the originals, but with a `.bak` extension. 
 3. The `theme_selection.py` script scans the `themes` directory and finds all available themes. 
-4. Identified themes are displayed to the user where the user enters a number selection corresponding
-   to a theme. 
+4. Identified themes are displayed to the user where the user enters a number corresponding to a theme. 
 5. `patch.py` is called to set the selected theme for all supported tool elements that theme has available.
 
 As an important note: **Not all themes contain support for all tool elements**.
@@ -45,7 +44,7 @@ will continue to look the same.
 If you would like to see the limited themes grow and have more effect, please consider supporting this project
 by adding configurations for our currently limited themes!
 
-## Manually settings themes
+## Manually Set Themes
 
 There may be cases where the user wishes to set the themes manually. These may include:
 
@@ -55,22 +54,48 @@ There may be cases where the user wishes to set the themes manually. These may i
 * Wanting to supply a custom theme from another directory 
   (Note: New themes can be included simply by adding a new folder to the `themes` directory)
 
-Regardless of the specific reason, the user is able to call the `patch.py` script with arguments to the
+Regardless of the specific reason, the user is able to call the `patch.py` script directly with arguments to the
 selected theme folder as well as the user preference configuration folder. The following code block
 demonstrates this:
 
 ```bash
 # From the top-level of the cloned repository
-python3 scripts/patch.py <themes/selected-theme/> <path/to/your/eeschema/folder/>
+python3 scripts/patch.py [PATH_TO_THEME_FOLDER] [PATH_TO_USER_PREFERENCE_FILES]
 ```
 
-Some optional arguments are also available: 
+Some optional arguments are also available for mixing and matching: 
 
 Optional Argument          | Description
 -------------------------- | ------------
 `-e`,`--eeschema_disable`  | Disable updating the theme of the schematic editor
 `-f`,`--footprint_disable` | Disable updating the theme of the footprint editor
 `-p`,`--pcb_disable`       | Disable updating the theme of the PCB editor
+
+## Backing Up Settings
+
+The `theme_selection.py` script will first check for the existence of `eeschema.bak` within the
+KiCad user preference folder. **This is operating system dependant**, based on the table below:
+
+Operating System (`sys.platform`) | KiCad User Preference Folder
+--------------------------------- | ------------------------------------
+Linux Distribution (`linux`)      | ~/.config/kicad
+macOS (`darwin`)                  | ~/Library/Preferences/kicad
+Windows (`win32`)                 | C:\Users\\`username`\AppData\Roaming\kicad
+
+If `eeschema.bak` exists, the script will do nothing more as a backup already exists. If the file
+does not yet exist, the script will take a copy of `eeschema` and place it into the same directory
+as `eeschema.bak`. It will do the same for `pcbnew` and `pcbnew.bak`. To summarize:
+**A backup will be made the first time this script is run and never touched again**. 
+
+If the user wishes to restore the backup theme and settings, this can be done by running `make` as
+if a new theme was being picked (see above for more detailed instructions), and select **option #1**. 
+This option will always be reserved for restoring a backup. If this option is selected, the script
+will overwrite the existing eeschema and pcbnew configuration files with the original. 
+
+**Any configuration changes made after a backup was created will be lost if a backup is restored**.
+To generate a new backup, simply delete the `eeschema.bak` and `pcbnew.bak` files from the path
+listed in the table above and then re-run the script with `make` at the top-level of the cloned
+repository. 
 
 ## JSON themes (for KiCad 6, and "5.99" nightly builds after February 2020)
 
