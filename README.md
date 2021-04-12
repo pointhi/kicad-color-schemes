@@ -52,6 +52,7 @@ color-scheme                                               | screenshot
 **nord** *Designed by @0xdec* | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/eeschema.png)
 **monokai** *Inspired by forum user kickofighto*    | ![Dark theme based on monokai](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/monokai/eeschema.png)
 **eagle** *Designed by DX-MON, Inspired by EagleCAD*       | ![Dark theme based on Eagle](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/eeschema.png)
+**wlight** *Designed by wykys, Inspired by Altium*       | ![Light theme designed for export to PDF](wlight/eeschema.png)
 
 ## pcbnew
 color-scheme                                               | screenshot
