@@ -139,6 +139,41 @@
                     "install_size": 5132
                 }
             ]
+        },
+        {
+            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "name": "wLight Theme",
+            "description": "Designed by wykys, Inspired by Altium",
+            "description_full": "Designed by wykys, Inspired by Altium",
+            "identifier": "theme-wlight",
+            "type": "colortheme",
+            "author": {
+                "name": "Jan Vykydal",
+                "contact": {
+                    "web": "https://github.com/wykys"
+                }
+            },
+            "maintainer": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "license": "CC0-1.0",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "versions": [
+                {
+                    "version": "1.0",
+                    "status": "stable",
+                    "kicad_version": "5.99",
+                    "download_sha256": "fde9ff2fefbc8a1e63cfaed3edb790b948270590a695526ac36fed060729f548",
+                    "download_size": 5155,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/wlight/theme-wlight_v1.0_pcm.zip",
+                    "install_size": 11053
+                }
+            ]
         }
     ]
 }
