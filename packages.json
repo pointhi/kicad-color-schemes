@@ -28,10 +28,10 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "ea0496aa0353e9b6e871c0057f1ead27b31738ed9d9dff2f28df766427e9e1ab",
-                    "download_size": 516,
+                    "download_sha256": "1722e017ec4c406e5b83c34d384859aca802ed3c773389423ce245431fc4397f",
+                    "download_size": 922,
                     "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/theme-solarized-dark_v1.0_pcm.zip",
-                    "install_size": 1091
+                    "install_size": 1954
                 }
             ]
         }

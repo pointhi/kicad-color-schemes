@@ -34,9 +34,17 @@ def create_pcm_from_color_scheme(path, resulting_file):
     with ZipFile(resulting_file, 'w', compression=zipfile.ZIP_DEFLATED) as zip:
         for json_file in path.glob("*.json"):
             if json_file.name == METADATA_FILEAME:
+                zip.write(json_file, json_file.name)
                 continue
-            print(json_file)
             zip.write(json_file, f"colors/{json_file.name}")
+
+
+def install_size_of_zip(zip_path):
+    install_size = 0
+    with ZipFile(zip_path, 'r') as zip:
+        for file in zip.filelist:
+            install_size += zip.getinfo(file.filename).file_size
+    return install_size
 
 
 def create_and_get_pcm(path):
@@ -59,16 +67,10 @@ def create_and_get_pcm(path):
             create_pcm_from_color_scheme(path, pkg_path)
 
         # fill in package data
-        install_size = 0
-        with ZipFile(pkg_path, 'r') as zip:
-            for file in zip.filelist:
-                print(file.filename)
-                install_size += zip.getinfo(file.filename).file_size
-
         metadata_version['download_sha256'] = sha256_of_file(pkg_path)
         metadata_version['download_size'] = pkg_path.stat().st_size
         metadata_version['download_url'] = f"{REPOSITORY_BASE_URI}/{path.name}/{pkg_name}"
-        metadata_version['install_size'] = install_size
+        metadata_version['install_size'] = install_size_of_zip(pkg_path)
 
     return metadata_json
 
