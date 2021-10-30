@@ -1,0 +1,29 @@
+{
+    "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+    "name": "Eagle inspired Theme",
+    "description": "Eagle CAD inspired color theme",
+    "description_full": "Eagle CAD inspired color theme",
+    "identifier": "theme-eagle",
+    "type": "colortheme",
+    "author": {
+        "name": "Rachel Mant",
+        "contact": {
+            "web": "https://github.com/DX-MON"
+        }
+    },
+    "maintainer": {
+        "name": "Thomas Pointhuber",
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        }
+    },
+    "license": "CC0-1.0",
+    "resources": {
+        "Github": "https://github.com/pointhi/kicad-color-schemes"
+    },
+    "versions": [{
+        "version": "1.0",
+        "status": "stable",
+        "kicad_version": "5.99"
+    }]
+}

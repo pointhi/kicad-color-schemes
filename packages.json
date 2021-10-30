@@ -37,6 +37,41 @@
         },
         {
             "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "name": "Eagle inspired Theme",
+            "description": "Eagle CAD inspired color theme",
+            "description_full": "Eagle CAD inspired color theme",
+            "identifier": "theme-eagle",
+            "type": "colortheme",
+            "author": {
+                "name": "Rachel Mant",
+                "contact": {
+                    "web": "https://github.com/DX-MON"
+                }
+            },
+            "maintainer": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "license": "CC0-1.0",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "versions": [
+                {
+                    "version": "1.0",
+                    "status": "stable",
+                    "kicad_version": "5.99",
+                    "download_sha256": "edf8db137c2152ff4a1b4cf2d779c17eb278d2a8f9bbe88f9ebe59a9c5dc69e8",
+                    "download_size": 4791,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/theme-eagle_v1.0_pcm.zip",
+                    "install_size": 10084
+                }
+            ]
+        },
+        {
+            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
             "name": "Solarized Dark Theme",
             "description": "Solarized Dark color theme",
             "description_full": "Solarized Dark color theme",
