@@ -10,6 +10,7 @@ from zipfile import ZipFile
 
 ROOT_PATH = Path(__file__).resolve().parent
 PACKAGES_JSON_PATH = ROOT_PATH / "packages.json"
+RESOURCES_PATH = ROOT_PATH / "resources.zip"
 REPOSITORY_JSON_PATH = ROOT_PATH / "repository.json"
 METADATA_FILEAME = "metadata.json"
 ICON_FILENAME = "icon.png"
@@ -90,6 +91,25 @@ def write_packages_json(package_array):
         json.dump(packages_data, f, indent=4)
 
 
+def write_resources_zip():
+    with ZipFile(RESOURCES_PATH, 'w', compression=zipfile.ZIP_DEFLATED) as zip:
+        for path in ROOT_PATH.iterdir():
+            if not path.is_dir():
+                continue
+
+            metadata_path = path / METADATA_FILEAME
+            icon_path = path / ICON_FILENAME
+            if not metadata_path.exists() or not icon_path.exists():
+                continue
+
+            with metadata_path.open("r") as f:
+                metadata_json = json.load(f)
+
+            identifier = metadata_json["identifier"]
+
+            zip.write(icon_path, f"{identifier}/{ICON_FILENAME}")
+
+
 def write_repository_json():
     packages_json_sha256 = sha256_of_file(PACKAGES_JSON_PATH)
     packages_json_update_timestamp = int(PACKAGES_JSON_PATH.stat().st_mtime)
@@ -112,6 +132,17 @@ def write_repository_json():
         }
     }
 
+    if RESOURCES_PATH.exists():
+        resources_sha256 = sha256_of_file(RESOURCES_PATH)
+        resources_update_timestamp = int(RESOURCES_PATH.stat().st_mtime)
+        resources_update_time_utc = datetime.datetime.fromtimestamp(resources_update_timestamp, tz=datetime.timezone.utc)
+        repository_data["resources"] = {
+            "sha256": resources_sha256,
+            "update_time_utc": resources_update_time_utc.strftime("%Y-%m-%d %H:%M:%S"),
+            "update_timestamp": resources_update_timestamp,
+            "url": "https://gitlab.com/kicad/addons/repository/-/jobs/artifacts/main/raw/artifacts/resources.zip?job=update"
+        }
+
     with REPOSITORY_JSON_PATH.open("w", encoding="utf-8") as f:
         json.dump(repository_data, f, indent=4)
 
@@ -128,4 +159,5 @@ if __name__ == "__main__":
 
     # write packages.json and repository.json
     write_packages_json(schemas)
+    write_resources_zip()
     write_repository_json()
