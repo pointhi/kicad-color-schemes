@@ -1,4 +1,39 @@
 {
     "packages": [
+        {
+            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "name": "solarized-dark theme",
+            "description": "solarized-dark color theme",
+            "description_full": "solarized-dark color theme",
+            "identifier": "theme-solarized-dark",
+            "type": "colortheme",
+            "author": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "maintainer": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "license": "CC0-1.0",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "versions": [
+                {
+                    "version": "1.0",
+                    "status": "stable",
+                    "kicad_version": "5.99",
+                    "download_sha256": "ea0496aa0353e9b6e871c0057f1ead27b31738ed9d9dff2f28df766427e9e1ab",
+                    "download_size": 516,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/theme-solarized-dark_v1.0_pcm.zip",
+                    "install_size": 1091
+                }
+            ]
+        }
     ]
 }
