@@ -1,0 +1,17 @@
+{
+    "$schema": "https://gitlab.com/kicad/code/kicad/-/raw/master/kicad/pcm/schemas/pcm.v1.schema.json#/definitions/Repository",
+    "maintainer": {
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        },
+        "name": "Thomas Pointhuber"
+    },
+    "name": "kicad-color-schemes repository by @pointhi",
+    "packages": {
+        "sha256": "a34335dda0557ee4c58b356c88ec4593117e51a28de7415c31c581334591bffa",
+        "update_time_utc": "2021-10-30 15:23:00",
+        "update_timestamp": 1635592980,
+        "url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/packages.json"
+    }
+}
+
