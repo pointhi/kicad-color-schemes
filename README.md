@@ -2,6 +2,10 @@
 
 Want to change the color scheme of KiCad? Look here for inspiration.
 
+## Install Color Themes using the Plugin and Content Manager (KiCad 5.99 + )
+
+If you run KiCad 5.99 which was build including the new `Plugin and Content Manager` (`-DKICAD_PCM=ON`), you can simply add the repository url `https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/repository.json` and install the themes inside KiCad.
+
 ## How to use a colour theme.
 
 Every theme directory contains the colour definition parts of the eeschema and pcbnew setup files found in your personal profile.
