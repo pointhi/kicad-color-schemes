@@ -140,7 +140,7 @@ def write_repository_json():
             "sha256": resources_sha256,
             "update_time_utc": resources_update_time_utc.strftime("%Y-%m-%d %H:%M:%S"),
             "update_timestamp": resources_update_timestamp,
-            "url": "https://gitlab.com/kicad/addons/repository/-/jobs/artifacts/main/raw/artifacts/resources.zip?job=update"
+            "url": f"{REPOSITORY_BASE_URI}/resources.zip"
         }
 
     with REPOSITORY_JSON_PATH.open("w", encoding="utf-8") as f:
