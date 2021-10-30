@@ -1,6 +1,6 @@
 {
     "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
-    "name": "black/white theme",
+    "name": "black-white theme",
     "description": "black-white color theme",
     "description_full": "black-white color theme",
     "identifier": "theme-black-white",

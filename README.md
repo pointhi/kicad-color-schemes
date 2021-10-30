@@ -45,7 +45,7 @@ color-scheme                                               | screenshot
 **kicad-2020**                                             | ![Default theme for KiCad 6.0](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/kicad-2020/eeschema.png)
 **solarized-dark** *http://ethanschoonover.com/solarized*  | ![Dark theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/eeschema.png)
 **solarized-light** *http://ethanschoonover.com/solarized* | ![Light theme based on solarized](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/eeschema.png)
-**sw**                                                     | ![simple black/white theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/sw/eeschema.png)
+**black-white**                                            | ![simple black/white theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/black-white/eeschema.png)
 **blue-tone**     | ![Blue tone theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-tone/eeschema.png)
 **behave-dark** *https://atom.io/themes/behave-theme*      | ![Dark theme based on behave](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/behave-dark/eeschema.png)
 **neon** *Inspired by forum user BobZ*      | ![Neon coloured theme inspired by forum user BobZ](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/neon/eeschema.png)

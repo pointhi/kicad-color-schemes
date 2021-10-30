@@ -125,6 +125,7 @@ if __name__ == "__main__":
             schema = create_and_get_pcm(path)
             if schema:
                 schemas.append(schema)
+    schemas = sorted(schemas, key=lambda d: d['identifier'])
 
     # write packages.json and repository.json
     write_packages_json(schemas)
