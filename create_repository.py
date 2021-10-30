@@ -12,6 +12,7 @@ ROOT_PATH = Path(__file__).resolve().parent
 PACKAGES_JSON_PATH = ROOT_PATH / "packages.json"
 REPOSITORY_JSON_PATH = ROOT_PATH / "repository.json"
 METADATA_FILEAME = "metadata.json"
+ICON_FILENAME = "icon.png"
 
 REPOSITORY_BASE_URI = "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master"
 
@@ -37,6 +38,10 @@ def create_pcm_from_color_scheme(path, resulting_file):
                 zip.write(json_file, json_file.name)
                 continue
             zip.write(json_file, f"colors/{json_file.name}")
+
+        icon_file = path / ICON_FILENAME
+        if icon_file.exists():
+            zip.write(icon_file, f"resources/{ICON_FILENAME}")
 
 
 def install_size_of_zip(zip_path):
