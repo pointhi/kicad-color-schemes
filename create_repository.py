@@ -3,6 +3,7 @@
 import datetime
 import hashlib
 import json
+import ntpath
 import zipfile
 
 from pathlib import Path
@@ -57,6 +58,8 @@ def create_and_get_pcm(path):
     if not metadata_path.exists():
         return
 
+    print(f"* create schema for: {path}")
+
     with metadata_path.open("rb") as f:
         metadata_json = json.load(f)
 
@@ -69,6 +72,7 @@ def create_and_get_pcm(path):
 
         if not pkg_path.exists():
             # create new package as it does not exist yet (new version)
+            print(f"  * create package: {pkg_path}")
             create_pcm_from_color_scheme(path, pkg_path)
 
         # fill in package data
@@ -113,7 +117,15 @@ def write_repository_json():
         json.dump(repository_data, f, indent=4)
 
 
-schema = create_and_get_pcm(ROOT_PATH / "solarized-dark")
+if __name__ == "__main__":
+    # create all package zip files and return the full schema of each one
+    schemas = []
+    for path in ROOT_PATH.iterdir():
+        if path.is_dir():
+            schema = create_and_get_pcm(path)
+            if schema:
+                schemas.append(schema)
 
-write_packages_json([schema])
-write_repository_json()
+    # write packages.json and repository.json
+    write_packages_json(schemas)
+    write_repository_json()

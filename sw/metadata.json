@@ -1,0 +1,29 @@
+{
+    "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+    "name": "black/white theme",
+    "description": "black-white color theme",
+    "description_full": "black-white color theme",
+    "identifier": "theme-black-white",
+    "type": "colortheme",
+    "author": {
+        "name": "Thomas Pointhuber",
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        }
+    },
+    "maintainer": {
+        "name": "Thomas Pointhuber",
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        }
+    },
+    "license": "CC0-1.0",
+    "resources": {
+        "Github": "https://github.com/pointhi/kicad-color-schemes"
+    },
+    "versions": [{
+        "version": "1.0",
+        "status": "stable",
+        "kicad_version": "5.99"
+    }]
+}

@@ -2,6 +2,76 @@
     "packages": [
         {
             "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "name": "black/white theme",
+            "description": "black-white color theme",
+            "description_full": "black-white color theme",
+            "identifier": "theme-black-white",
+            "type": "colortheme",
+            "author": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "maintainer": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "license": "CC0-1.0",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "versions": [
+                {
+                    "version": "1.0",
+                    "status": "stable",
+                    "kicad_version": "5.99",
+                    "download_sha256": "8d0a7b4d6df84ef9aac98ce5426f6ccf8375b85f4fd03b6907d7ace3727bf789",
+                    "download_size": 426,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/sw/theme-black-white_v1.0_pcm.zip",
+                    "install_size": 851
+                }
+            ]
+        },
+        {
+            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "name": "solarized-light theme",
+            "description": "solarized-light color theme",
+            "description_full": "solarized-light color theme",
+            "identifier": "theme-solarized-light",
+            "type": "colortheme",
+            "author": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "maintainer": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "license": "CC0-1.0",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "versions": [
+                {
+                    "version": "1.0",
+                    "status": "stable",
+                    "kicad_version": "5.99",
+                    "download_sha256": "69b95828244851185058788f105a38d9e0f4bf88b5365bc480cac2cfc52d7687",
+                    "download_size": 930,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/theme-solarized-light_v1.0_pcm.zip",
+                    "install_size": 1964
+                }
+            ]
+        },
+        {
+            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
             "name": "solarized-dark theme",
             "description": "solarized-dark color theme",
             "description_full": "solarized-dark color theme",
