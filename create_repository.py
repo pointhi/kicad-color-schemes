@@ -3,7 +3,6 @@
 import datetime
 import hashlib
 import json
-import ntpath
 import zipfile
 
 from pathlib import Path

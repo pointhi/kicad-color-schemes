@@ -1,8 +1,8 @@
 {
     "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
-    "name": "solarized-light theme",
-    "description": "solarized-light color theme",
-    "description_full": "solarized-light color theme",
+    "name": "Solarized Light Theme",
+    "description": "Solarized Light color theme",
+    "description_full": "Solarized Light color theme",
     "identifier": "theme-solarized-light",
     "type": "colortheme",
     "author": {
