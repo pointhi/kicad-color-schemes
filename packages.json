@@ -28,8 +28,8 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "4950e7749fc2c13478494f392d74d3626bafe2ccab80bb5514f2da67647455f6",
-                    "download_size": 831,
+                    "download_sha256": "6bdec83d2a59d35513cc92d424d7717db01793cb30b9f3a1b20fe20191fd333c",
+                    "download_size": 840,
                     "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/black-white/theme-black-white_v1.0_pcm.zip",
                     "install_size": 1928
                 }
