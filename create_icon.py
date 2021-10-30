@@ -8,9 +8,10 @@ from pathlib import Path
 
 ROOT_PATH = Path(__file__).resolve().parent
 ICON_EESCHEMA_SVG = ROOT_PATH / "icon_sch_base.svg"
+ICON_PCBNEW_SVG = ROOT_PATH / "icon_pcb_base.svg"
 METADATA_FILEAME = "metadata.json"
 
-REPLACEMENT_TABLE = {
+EESCHEMA_REPLACEMENT_TABLE = {
     "#d0c5ac": "background",
     "#00ff00": "wire",
     "#999999": "component_body",
@@ -22,8 +23,49 @@ REPLACEMENT_TABLE = {
     "#800080": "value"
 }
 
+PCBNEW_REPLACEMENT_TABLE = {
+    "#d0c5ac": "background",
+    "#ff6600": "f_silks",
+    "#ff00ff": "f_crtyd",
+    "#000080": "f_fab",
+    "#808000": "pad_through_hole",
+    "#ff0000": "via_hole",
+    "#ffff00": "via_through",
+    "#00ff00": "copper_b",
+    "#00ffff": "copper_f",
+}
 
-if __name__ == "__main__":
+
+def parse_color(kicad_color):
+    match = re.match(r"\s*rgb\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)", kicad_color)
+    if match:
+        red, green, blue = match.groups()
+    else:
+        match = re.match(r"\s*rgba\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+.\d+)\s*\)", kicad_color)
+        if not match:
+            print(f"cannot parse color {kicad_color}")
+            exit(1)
+        red, green, blue, alpha = match.groups()
+    return int(red), int(green), int(blue)
+
+
+def replace_img(data, theme_json, replacement_table, theme_key):
+    result_data = data
+    for orig_color, replacement in replacement_table.items():
+        if 'copper' in theme_json[theme_key]:
+            # small hack
+            theme_json[theme_key]['copper_f'] = theme_json[theme_key]['copper']['f']
+            theme_json[theme_key]['copper_b'] = theme_json[theme_key]['copper']['b']
+
+        replacement_str = theme_json[theme_key][replacement]
+        red, green, blue = parse_color(replacement_str)
+        replacement_color = f"#{red:02X}{green:02X}{blue:02X}"
+        replace_regex = re.compile(re.escape(orig_color), re.IGNORECASE)
+        result_data = replace_regex.sub(replacement_color, result_data)
+    return result_data
+
+
+def main():
     parser = argparse.ArgumentParser(description='Create SVG icon applied by color scheme')
     parser.add_argument('theme_dir', type=str)
 
@@ -44,23 +86,28 @@ if __name__ == "__main__":
         print(f"no .json found in {theme_dir}")
         exit(1)
 
-    with ICON_EESCHEMA_SVG.open("r") as f:
-        svg_data = f.read()
+    if 'schematic' in theme_json:
+        print('create schematic icon')
+        with ICON_EESCHEMA_SVG.open("r") as f:
+            svg_data = f.read()
 
-    for orig_color, replacement in REPLACEMENT_TABLE.items():
-        replacement_str = theme_json['schematic'][replacement]
-        match = re.match(r"\s*rgb\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)", replacement_str)
-        if not match:
-            print(f"cannot find color for {replacement} in theme!")
-            exit(1)
-        red, green, blue = match.groups()
-        replacement_color = f"#{int(red):02X}{int(green):02X}{int(blue):02X}"
-        print(f"{replacement} = {replacement_color}")
-        replace_regex = re.compile(re.escape(orig_color), re.IGNORECASE)
-        svg_data = replace_regex.sub(replacement_color, svg_data)
+        svg_data = replace_img(svg_data, theme_json, EESCHEMA_REPLACEMENT_TABLE, 'schematic')
 
-        #svg_data = svg_data.replace(orig_color, replacement_color)
+        icon_file = theme_dir / "icon_sch.svg"
+        with icon_file.open("w") as f:
+            f.write(svg_data)
 
-    icon_file = theme_dir / "icon.svg"
-    with icon_file.open("w") as f:
-        f.write(svg_data)
+    if 'board' in theme_json:
+        print('create board icon')
+        with ICON_PCBNEW_SVG.open("r") as f:
+            svg_data = f.read()
+
+        svg_data = replace_img(svg_data, theme_json, PCBNEW_REPLACEMENT_TABLE, 'board')
+
+        icon_file = theme_dir / "icon_brd.svg"
+        with icon_file.open("w") as f:
+            f.write(svg_data)
+
+
+if __name__ == "__main__":
+    main()
