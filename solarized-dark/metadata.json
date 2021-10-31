@@ -1,8 +1,8 @@
 {
     "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
     "name": "Solarized Dark Theme",
-    "description": "Solarized Dark color theme",
-    "description_full": "Solarized Dark color theme",
+    "description": "Based on Solarized colorscheme from Ethan Schoonover",
+    "description_full": "Based on Solarized colorscheme from Ethan Schoonover.\nSee https://ethanschoonover.com/solarized/ for more details.",
     "identifier": "theme-solarized-dark",
     "type": "colortheme",
     "author": {
