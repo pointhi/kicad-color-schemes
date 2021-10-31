@@ -3,8 +3,8 @@
         {
             "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
             "name": "Black-White Theme",
-            "description": "Black-White color theme",
-            "description_full": "Black-White color theme",
+            "description": "Designed for printing",
+            "description_full": "Designed for printing",
             "identifier": "theme-black-white",
             "type": "colortheme",
             "author": {
@@ -28,10 +28,10 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "5b35ad2d3c910d053c27a9494ce7729e7bc4436591844e4829586a984953f937",
-                    "download_size": 3883,
+                    "download_sha256": "6c2f34f7c6158929712c38f8bcff938c19414666d594cfa7043abe4cc7d92de1",
+                    "download_size": 3973,
                     "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/black-white/theme-black-white_v1.0_pcm.zip",
-                    "install_size": 4847
+                    "install_size": 5154
                 }
             ]
         },
