@@ -34,7 +34,7 @@
     "reference": "rgb(38, 139, 210)",
     "shadow": "rgba(102, 179, 255, 0.800)",
     "sheet": "rgb(88, 110, 117)",
-    "sheet_background": "rgb(238, 232, 213)",
+    "sheet_background": "rgba(255, 255, 255, 0.000)",
     "sheet_fields": "rgb(147, 161, 161)",
     "sheet_filename": "rgb(108, 113, 196)",
     "sheet_label": "rgb(203, 75, 22)",

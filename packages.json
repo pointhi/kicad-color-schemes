@@ -98,10 +98,10 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "2e12eead318b88c755cfce4a4dfd7bdbf0a81520c17ae55bce46127cf589ed25",
-                    "download_size": 4392,
+                    "download_sha256": "698691d195fd009e1aa65954ccdf55690d10bbd3a2d6a80647e83c210eb7c4b6",
+                    "download_size": 4398,
                     "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/theme-solarized-dark_v1.0_pcm.zip",
-                    "install_size": 5672
+                    "install_size": 5684
                 }
             ]
         },
@@ -133,10 +133,10 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "9a206953bca018b034b76cfc0736153dca22fd3778f2fb1515b6c80cc683654e",
-                    "download_size": 4386,
+                    "download_sha256": "bc9332b5119dee02e6860877af32aa0e3214e91004678a998944541fb1103d3d",
+                    "download_size": 4393,
                     "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/theme-solarized-light_v1.0_pcm.zip",
-                    "install_size": 5664
+                    "install_size": 5672
                 }
             ]
         },
