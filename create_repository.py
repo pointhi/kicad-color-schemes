@@ -116,7 +116,7 @@ def write_repository_json():
     packages_json_update_time_utc = datetime.datetime.fromtimestamp(packages_json_update_timestamp, tz=datetime.timezone.utc)
 
     repository_data = {
-        "$schema": "https://gitlab.com/kicad/code/kicad/-/raw/master/kicad/pcm/schemas/pcm.v1.schema.json#/definitions/Repository",
+        "$schema": "https://go.kicad.org/pcm/schemas/v1#/definitions/Repository",
         "maintainer": {
             "contact": {
                 "web": "https://github.com/pointhi/kicad-color-schemes/"

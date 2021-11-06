@@ -1,9 +1,9 @@
 {
-    "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
     "name": "Eagle inspired Theme",
     "description": "Eagle CAD inspired color theme",
     "description_full": "Eagle CAD inspired color theme",
-    "identifier": "theme-eagle",
+    "identifier": "com.github.pointhi.kicad-color-schemes.eagle",
     "type": "colortheme",
     "author": {
         "name": "Rachel Mant",

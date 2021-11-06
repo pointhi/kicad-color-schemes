@@ -1,11 +1,11 @@
 {
     "packages": [
         {
-            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
             "name": "Black-White Theme",
             "description": "Designed for printing",
             "description_full": "Designed for printing",
-            "identifier": "theme-black-white",
+            "identifier": "com.github.pointhi.kicad-color-schemes.black-white",
             "type": "colortheme",
             "author": {
                 "name": "Thomas Pointhuber",
@@ -28,19 +28,19 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "6c2f34f7c6158929712c38f8bcff938c19414666d594cfa7043abe4cc7d92de1",
-                    "download_size": 3973,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/black-white/theme-black-white_v1.0_pcm.zip",
-                    "install_size": 5154
+                    "download_sha256": "40ae0995aae5748311f10c0fd34f456859598d5b55990b63c8723f6c34fbc8e6",
+                    "download_size": 3962,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/black-white/com.github.pointhi.kicad-color-schemes.black-white_v1.0_pcm.zip",
+                    "install_size": 5144
                 }
             ]
         },
         {
-            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
             "name": "Eagle inspired Theme",
             "description": "Eagle CAD inspired color theme",
             "description_full": "Eagle CAD inspired color theme",
-            "identifier": "theme-eagle",
+            "identifier": "com.github.pointhi.kicad-color-schemes.eagle",
             "type": "colortheme",
             "author": {
                 "name": "Rachel Mant",
@@ -63,19 +63,19 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "edf8db137c2152ff4a1b4cf2d779c17eb278d2a8f9bbe88f9ebe59a9c5dc69e8",
-                    "download_size": 4791,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/theme-eagle_v1.0_pcm.zip",
-                    "install_size": 10084
+                    "download_sha256": "d28fd88ca32c4826fab71d780896ddccf9d48c7cdc5858a5e64f8ff5f3c49922",
+                    "download_size": 4781,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/com.github.pointhi.kicad-color-schemes.eagle_v1.0_pcm.zip",
+                    "install_size": 10074
                 }
             ]
         },
         {
-            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
             "name": "Solarized Dark Theme",
             "description": "Based on Solarized colorscheme from Ethan Schoonover",
             "description_full": "Based on Solarized colorscheme from Ethan Schoonover.\nSee https://ethanschoonover.com/solarized/ for more details.",
-            "identifier": "theme-solarized-dark",
+            "identifier": "com.github.pointhi.kicad-color-schemes.solarized-dark",
             "type": "colortheme",
             "author": {
                 "name": "Thomas Pointhuber",
@@ -98,19 +98,19 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "698691d195fd009e1aa65954ccdf55690d10bbd3a2d6a80647e83c210eb7c4b6",
-                    "download_size": 4398,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/theme-solarized-dark_v1.0_pcm.zip",
-                    "install_size": 5684
+                    "download_sha256": "5ba4458fb3635083aaed5425cc852d78e2c16aeb4271145ffd328e5ec120fc99",
+                    "download_size": 4387,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/com.github.pointhi.kicad-color-schemes.solarized-dark_v1.0_pcm.zip",
+                    "install_size": 5674
                 }
             ]
         },
         {
-            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
             "name": "Solarized Light Theme",
             "description": "Based on Solarized colorscheme from Ethan Schoonover",
             "description_full": "Based on Solarized colorscheme from Ethan Schoonover.\nSee https://ethanschoonover.com/solarized/ for more details.",
-            "identifier": "theme-solarized-light",
+            "identifier": "com.github.pointhi.kicad-color-schemes.solarized-light",
             "type": "colortheme",
             "author": {
                 "name": "Thomas Pointhuber",
@@ -133,19 +133,19 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "bc9332b5119dee02e6860877af32aa0e3214e91004678a998944541fb1103d3d",
-                    "download_size": 4393,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/theme-solarized-light_v1.0_pcm.zip",
-                    "install_size": 5672
+                    "download_sha256": "2c8575c352f3368156234d0ce7704c8108971c6d87c8e4675fff23d30b7aa7d2",
+                    "download_size": 4380,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/com.github.pointhi.kicad-color-schemes.solarized-light_v1.0_pcm.zip",
+                    "install_size": 5662
                 }
             ]
         },
         {
-            "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
             "name": "wLight Theme",
             "description": "Designed by wykys, Inspired by Altium",
             "description_full": "Designed by wykys, Inspired by Altium",
-            "identifier": "theme-wlight",
+            "identifier": "com.github.pointhi.kicad-color-schemes.wlight",
             "type": "colortheme",
             "author": {
                 "name": "Jan Vykydal",
@@ -168,10 +168,10 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "fde9ff2fefbc8a1e63cfaed3edb790b948270590a695526ac36fed060729f548",
-                    "download_size": 5155,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/wlight/theme-wlight_v1.0_pcm.zip",
-                    "install_size": 11053
+                    "download_sha256": "951ca2ce68bdec8addb8ee63a6293e80f8be66d0eb22aeca9c601b82cc348239",
+                    "download_size": 5145,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/wlight/com.github.pointhi.kicad-color-schemes.wlight_v1.0_pcm.zip",
+                    "install_size": 11043
                 }
             ]
         }

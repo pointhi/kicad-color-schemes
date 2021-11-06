@@ -1,5 +1,5 @@
 {
-    "$schema": "https://gitlab.com/kicad/code/kicad/-/raw/master/kicad/pcm/schemas/pcm.v1.schema.json#/definitions/Repository",
+    "$schema": "https://go.kicad.org/pcm/schemas/v1#/definitions/Repository",
     "maintainer": {
         "contact": {
             "web": "https://github.com/pointhi/kicad-color-schemes/"
@@ -8,15 +8,15 @@
     },
     "name": "kicad-color-schemes repository by @pointhi",
     "packages": {
-        "sha256": "15b84be25fd4acac983b5a11fab8ed6ad1393f788fec5268fc9ec3ce78297e18",
-        "update_time_utc": "2021-10-31 15:47:14",
-        "update_timestamp": 1635695234,
+        "sha256": "13590900aa264bd71089c237347ea1cf85df517e6dee17c5ded25ceba2e86468",
+        "update_time_utc": "2021-11-06 17:33:26",
+        "update_timestamp": 1636220006,
         "url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/packages.json"
     },
     "resources": {
-        "sha256": "e438fe66584ea0c2c972f39c17c61a0fdb4ddfc73e052d70396537649cee0eda",
-        "update_time_utc": "2021-10-31 15:47:14",
-        "update_timestamp": 1635695234,
+        "sha256": "8d99a5f3e1da63ba146c253f5c5db2c12c916f2b86a8047a218f3a762cbf8948",
+        "update_time_utc": "2021-11-06 17:33:27",
+        "update_timestamp": 1636220007,
         "url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/resources.zip"
     }
 }

@@ -1,9 +1,9 @@
 {
-    "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
     "name": "Solarized Dark Theme",
     "description": "Based on Solarized colorscheme from Ethan Schoonover",
     "description_full": "Based on Solarized colorscheme from Ethan Schoonover.\nSee https://ethanschoonover.com/solarized/ for more details.",
-    "identifier": "theme-solarized-dark",
+    "identifier": "com.github.pointhi.kicad-color-schemes.solarized-dark",
     "type": "colortheme",
     "author": {
         "name": "Thomas Pointhuber",

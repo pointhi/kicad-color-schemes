@@ -1,9 +1,9 @@
 {
-    "$schema": "https://gitlab.com/qu1ck/kicad/-/raw/pcm/kicad/pcm/schemas/pcm.v1.schema.json#",
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
     "name": "wLight Theme",
     "description": "Designed by wykys, Inspired by Altium",
     "description_full": "Designed by wykys, Inspired by Altium",
-    "identifier": "theme-wlight",
+    "identifier": "com.github.pointhi.kicad-color-schemes.wlight",
     "type": "colortheme",
     "author": {
         "name": "Jan Vykydal",
