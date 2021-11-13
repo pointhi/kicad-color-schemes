@@ -1,0 +1,29 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "Nord Theme",
+    "description": "Designed by @0xdec",
+    "description_full": "Designed by @0xdec.",
+    "identifier": "com.github.pointhi.kicad-color-schemes.nord",
+    "type": "colortheme",
+    "author": {
+        "name": "Thomas Pointhuber",
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        }
+    },
+    "maintainer": {
+        "name": "Thomas Pointhuber",
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        }
+    },
+    "license": "CC0-1.0",
+    "resources": {
+        "Github": "https://github.com/pointhi/kicad-color-schemes"
+    },
+    "versions": [{
+        "version": "1.0",
+        "status": "stable",
+        "kicad_version": "5.99"
+    }]
+}
