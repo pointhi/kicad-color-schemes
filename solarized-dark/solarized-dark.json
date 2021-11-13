@@ -1,8 +1,8 @@
 {
   "meta": {
     "filename": "solarized-dark",
-    "name": "Solarized Dark",
-    "version": 1
+    "name": "Solarized Dark (Schematic only)",
+    "version": 2
   },
   "schematic": {
     "anchor": "rgb(0, 0, 255)",

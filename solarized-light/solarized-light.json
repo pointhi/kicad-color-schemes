@@ -1,8 +1,8 @@
 {
   "meta": {
     "filename": "solarized-light",
-    "name": "Solarized Light",
-    "version": 1
+    "name": "Solarized Light (Schematic only)",
+    "version": 2
   },
   "schematic": {
     "anchor": "rgb(0, 0, 255)",

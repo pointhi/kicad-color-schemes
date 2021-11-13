@@ -1,8 +1,8 @@
 {
   "meta": {
     "filename": "black-white",
-    "name": "Black/White",
-    "version": 1
+    "name": "Black/White (Schematic only)",
+    "version": 2
   },
   "schematic": {
     "anchor": "rgb(0, 0, 0)",

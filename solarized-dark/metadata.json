@@ -22,7 +22,7 @@
         "Github": "https://github.com/pointhi/kicad-color-schemes"
     },
     "versions": [{
-        "version": "1.0",
+        "version": "1.1",
         "status": "stable",
         "kicad_version": "5.99"
     }]
