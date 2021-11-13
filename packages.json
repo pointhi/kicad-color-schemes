@@ -25,22 +25,22 @@
             },
             "versions": [
                 {
-                    "version": "1.0",
+                    "version": "1.1",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "40ae0995aae5748311f10c0fd34f456859598d5b55990b63c8723f6c34fbc8e6",
-                    "download_size": 3962,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/black-white/com.github.pointhi.kicad-color-schemes.black-white_v1.0_pcm.zip",
-                    "install_size": 5144
+                    "download_sha256": "82fca492b81427fd3d5b5e98ae145f81370f5aa137fd41aa0ef0826f4c192e07",
+                    "download_size": 3971,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/black-white/com.github.pointhi.kicad-color-schemes.black-white_v1.1_pcm.zip",
+                    "install_size": 5161
                 }
             ]
         },
         {
             "$schema": "https://go.kicad.org/pcm/schemas/v1",
-            "name": "Eagle inspired Theme",
+            "name": "Eagle Dark Theme",
             "description": "Eagle CAD inspired color theme",
             "description_full": "Eagle CAD inspired color theme",
-            "identifier": "com.github.pointhi.kicad-color-schemes.eagle",
+            "identifier": "com.github.pointhi.kicad-color-schemes.eagle-dark",
             "type": "colortheme",
             "author": {
                 "name": "Rachel Mant",
@@ -63,10 +63,45 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "d28fd88ca32c4826fab71d780896ddccf9d48c7cdc5858a5e64f8ff5f3c49922",
-                    "download_size": 4781,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle/com.github.pointhi.kicad-color-schemes.eagle_v1.0_pcm.zip",
-                    "install_size": 10074
+                    "download_sha256": "f294c063005ab166979e65b13c2b21f9286336672ea8142b94150fc15372a3d6",
+                    "download_size": 6423,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle-dark/com.github.pointhi.kicad-color-schemes.eagle-dark_v1.0_pcm.zip",
+                    "install_size": 10196
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "name": "Nord Theme",
+            "description": "Designed by @0xdec",
+            "description_full": "Designed by @0xdec.",
+            "identifier": "com.github.pointhi.kicad-color-schemes.nord",
+            "type": "colortheme",
+            "author": {
+                "name": "Jordi Pakey-Rodriguez",
+                "contact": {
+                    "web": "https://github.com/jordiorlando"
+                }
+            },
+            "maintainer": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "license": "CC0-1.0",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "versions": [
+                {
+                    "version": "1.0",
+                    "status": "stable",
+                    "kicad_version": "5.99",
+                    "download_sha256": "4a2cc831f805a10178c17542cdbbbb3993ec5d3dcc06ddec83bb290a71b6f2e9",
+                    "download_size": 6728,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/com.github.pointhi.kicad-color-schemes.nord_v1.0_pcm.zip",
+                    "install_size": 10342
                 }
             ]
         },
@@ -95,13 +130,13 @@
             },
             "versions": [
                 {
-                    "version": "1.0",
+                    "version": "1.1",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "5ba4458fb3635083aaed5425cc852d78e2c16aeb4271145ffd328e5ec120fc99",
-                    "download_size": 4387,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/com.github.pointhi.kicad-color-schemes.solarized-dark_v1.0_pcm.zip",
-                    "install_size": 5674
+                    "download_sha256": "481047d4c0aeca30fac5da457a9daf59ce658f519ac349833160ef7374e2d7d4",
+                    "download_size": 4395,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-dark/com.github.pointhi.kicad-color-schemes.solarized-dark_v1.1_pcm.zip",
+                    "install_size": 5691
                 }
             ]
         },
@@ -130,13 +165,13 @@
             },
             "versions": [
                 {
-                    "version": "1.0",
+                    "version": "1.1",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "2c8575c352f3368156234d0ce7704c8108971c6d87c8e4675fff23d30b7aa7d2",
-                    "download_size": 4380,
-                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/com.github.pointhi.kicad-color-schemes.solarized-light_v1.0_pcm.zip",
-                    "install_size": 5662
+                    "download_sha256": "d500e33b3b7504700be23f388b84cdb4f93d5ee6061feec3baf68919be3955ee",
+                    "download_size": 4389,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/solarized-light/com.github.pointhi.kicad-color-schemes.solarized-light_v1.1_pcm.zip",
+                    "install_size": 5679
                 }
             ]
         },
@@ -168,10 +203,10 @@
                     "version": "1.0",
                     "status": "stable",
                     "kicad_version": "5.99",
-                    "download_sha256": "951ca2ce68bdec8addb8ee63a6293e80f8be66d0eb22aeca9c601b82cc348239",
-                    "download_size": 5145,
+                    "download_sha256": "f5558570f6c9e30944b047d32721221adfb1cb7fc2174b02e60921577301f555",
+                    "download_size": 4321,
                     "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/wlight/com.github.pointhi.kicad-color-schemes.wlight_v1.0_pcm.zip",
-                    "install_size": 11043
+                    "install_size": 5486
                 }
             ]
         }
