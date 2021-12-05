@@ -8,15 +8,15 @@
     },
     "name": "kicad-color-schemes repository by @pointhi",
     "packages": {
-        "sha256": "22f963931b6d9400f74b6f15d0ec45d5153f4fd544ddb7b53942c186478c6e27",
-        "update_time_utc": "2021-11-13 13:31:57",
-        "update_timestamp": 1636810317,
+        "sha256": "72a4f47b3ecd5c36bf6664453cb5e7466e296cfcdf7323472e93a93e48ad3cf3",
+        "update_time_utc": "2021-12-04 16:02:50",
+        "update_timestamp": 1638633770,
         "url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/packages.json"
     },
     "resources": {
-        "sha256": "dce87a39c78012b2f997d09081e33b601b7094b5ce3f86eb9258ff793a006810",
-        "update_time_utc": "2021-11-13 13:31:57",
-        "update_timestamp": 1636810317,
+        "sha256": "0445e94dda0d630989f6baca2c0b3689e7fc2435b0bed15ae4b500a1cab4fc22",
+        "update_time_utc": "2021-12-04 16:02:50",
+        "update_timestamp": 1638633770,
         "url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/resources.zip"
     }
 }

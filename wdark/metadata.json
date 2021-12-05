@@ -1,0 +1,29 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "wDark Theme",
+    "description": "Designed by wykys, Inspired by One Dark",
+    "description_full": "Designed by wykys, Inspired by One Dark",
+    "identifier": "com.github.pointhi.kicad-color-schemes.wdark",
+    "type": "colortheme",
+    "author": {
+        "name": "Jan Vykydal",
+        "contact": {
+            "web": "https://github.com/wykys"
+        }
+    },
+    "maintainer": {
+        "name": "Thomas Pointhuber",
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        }
+    },
+    "license": "CC0-1.0",
+    "resources": {
+        "Github": "https://github.com/pointhi/kicad-color-schemes"
+    },
+    "versions": [{
+        "version": "1.0",
+        "status": "stable",
+        "kicad_version": "5.99"
+    }]
+}
