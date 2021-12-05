@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "filename": "eagle-dark",
+    "name": "Eagle Dark",
+    "version": 3
+  },
   "board": {
     "anchor": "rgb(174, 129, 255)",
     "aux_items": "rgb(255, 255, 255)",
@@ -85,11 +90,6 @@
     "via_micro": "rgb(0, 132, 132)",
     "via_through": "rgb(194, 194, 194)",
     "worksheet": "rgb(192, 0, 0)"
-  },
-  "meta": {
-    "filename": "eagle-dark",
-    "name": "Eagle Dark",
-    "version": 1
   },
   "schematic": {
     "anchor": "rgb(0, 0, 255)",

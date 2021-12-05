@@ -2,7 +2,7 @@
   "meta": {
     "filename": "wlight",
     "name": "wLight (Schematic only)",
-    "version": 1
+    "version": 3
   },
   "schematic": {
     "anchor": "rgb(0, 0, 255)",

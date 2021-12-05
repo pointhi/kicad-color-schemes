@@ -2,7 +2,7 @@
   "meta": {
     "filename": "black-white",
     "name": "Black/White (Schematic only)",
-    "version": 2
+    "version": 3
   },
   "schematic": {
     "anchor": "rgb(0, 0, 0)",
