@@ -4,8 +4,19 @@ import argparse
 from collections import OrderedDict
 from pathlib import Path
 import shutil
+import platform
 
 class ConfigFile():
+
+    @staticmethod
+    def default_path():
+        default_paths = {
+            "Linux": os.path.expanduser("~/.config/kicad"),
+            "Windows": os.path.expandvars("%APPDATA%\\kicad"),
+            "Darwin": os.path.expanduser("~/Library/Preferences/kicad")
+        }
+        return default_paths[platform.system()]
+
     def __init__(self, filepath):
         self.content = OrderedDict()
         self.filepath = filepath
@@ -46,8 +57,8 @@ class ConfigFile():
 parser = argparse.ArgumentParser(description='Patch the KiCad settings file with the given colour scheme.')
 parser.add_argument('scheme_path', type=Path, nargs=1,
                         help='Path to scheme definition.')
-parser.add_argument('config_dir', type=Path, nargs=1,
-                        help='Path to kicad config directory')
+parser.add_argument('config_dir', type=Path, nargs='?', default=ConfigFile.default_path(),
+                        help='Path to kicad config directory (Default: %(default)s)')
 parser.add_argument('-p', '--pcb_disable', action='store_true', help='Disable patching of pcb_new colour definition')
 parser.add_argument('-f', '--footprint_disable', action='store_true', help='Disable patching of footprint editor colour definition')
 parser.add_argument('-e', '--eeschema_disable', action='store_true', help='Disable patching of eeschema and symbol editor colour definition')
@@ -59,7 +70,7 @@ if args.pcb_disable and args.footprint_disable and args.eeschema_disable:
     print("All definitions disabled. Nothing to do. (Use --help for instructions.)")
     exit()
 
-if not args.config_dir[0].is_dir():
+if not args.config_dir.is_dir():
     print("'{}' expected to be the kicad config directory but it is not a directory or does not exist. (Use --help for instructions.)".format(args.config_dir[0]))
     exit()
 
@@ -72,7 +83,7 @@ if not args.eeschema_disable:
         print("Scheme does not contain a definition for EESchema, skipped.")
     else:
         print("Updating EESchema configuration.")
-        ee_config = args.config_dir[0] / 'eeschema'
+        ee_config = args.config_dir / 'eeschema'
         try:
             shutil.copy(ee_config, str(ee_config)+".bak")
         except:
@@ -91,7 +102,7 @@ if args.pcb_disable and args.footprint_disable:
     print("Done")
     exit()
 
-pcb_config = args.config_dir[0] / 'pcbnew'
+pcb_config = args.config_dir / 'pcbnew'
 try:
     shutil.copy(pcb_config, str(pcb_config)+".bak")
 except:
