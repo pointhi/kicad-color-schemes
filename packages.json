@@ -2,6 +2,41 @@
     "packages": [
         {
             "$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "name": "Arcana Theme",
+            "description": "A bright pastel theme",
+            "description_full": "A bright pastel theme for delving into the arcane arts",
+            "identifier": "com.github.pointhi.kicad-color-schemes.arcana",
+            "type": "colortheme",
+            "author": {
+                "name": "Aki Van Ness",
+                "contact": {
+                    "web": "https://github.com/lethalbit"
+                }
+            },
+            "maintainer": {
+                "name": "Thomas Pointhuber",
+                "contact": {
+                    "web": "https://github.com/pointhi/kicad-color-schemes/"
+                }
+            },
+            "license": "CC0-1.0",
+            "resources": {
+                "Github": "https://github.com/pointhi/kicad-color-schemes"
+            },
+            "versions": [
+                {
+                    "version": "1.0",
+                    "status": "stable",
+                    "kicad_version": "6.0",
+                    "download_sha256": "869e7b2750f2057fb03972014bb0965315fb8423883fd86ed0fe84f03964894a",
+                    "download_size": 1879,
+                    "download_url": "https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/arcana/com.github.pointhi.kicad-color-schemes.arcana_v1.0_pcm.zip",
+                    "install_size": 7605
+                }
+            ]
+        },
+        {
+            "$schema": "https://go.kicad.org/pcm/schemas/v1",
             "name": "Black-White Theme",
             "description": "Designed for printing",
             "description_full": "Designed for printing",

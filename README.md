@@ -59,6 +59,7 @@ file in the PcbNew and footprint editor preferences dialogs.
 | **eagle-dark** *Designed by DX-MON, Inspired by EagleCAD*  | ![Dark theme based on Eagle](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle-dark/eeschema.png)                  |
 | **wdark** *Designed by wykys, Inspired by One Dark*        | ![Dark theme designed for schematic editor](wdark/eeschema.png)                                                                             |
 | **wlight** *Designed by wykys, Inspired by Altium*         | ![Light theme designed for export to PDF](wlight/eeschema.png)                                                                              |
+| **arcana** *Designed by @lethalbit*                       | ![Arcana bright pastal theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/arcana/eeschema.png)                      |
 
 ## pcbnew
 | color-scheme                                              | screenshot                                                                                                                                |
@@ -69,6 +70,7 @@ file in the PcbNew and footprint editor preferences dialogs.
 | **blue-green-dark**                                       | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/pcbnew.png)       |
 | **nord** *Designed by @0xdec*                             | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/pcbnew.png)             |
 | **eagle-dark** *Designed by DX-MON, Inspired by EagleCAD* | ![Loosely based on Eagle's dark theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle-dark/pcbnew.png)        |
+| **arcana** *Designed by @lethalbit*                       | ![Arcana bright pastal theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/arcana/pcbnew.png)                     |
 
 ## footprint editor
 | color-scheme                                              | screenshot                                                                                                                                          |
@@ -79,3 +81,4 @@ file in the PcbNew and footprint editor preferences dialogs.
 | **blue-green-dark**                                       | ![Dark theme using blue and green](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/blue-green-dark/footprint_editor.png)       |
 | **nord** *Designed by @0xdec*                             | ![based on the nordtheme color palette](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/nord/footprint_editor.png)             |
 | **eagle-dark** *Designed by DX-MON, Inspired by EagleCAD* | ![Loosely based on Eagle's dark theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/eagle-dark/footprint_editor.png)        |
+| **arcana** *Designed by @lethalbit*                       | ![Arcana bright pastal theme](https://raw.githubusercontent.com/pointhi/kicad-color-schemes/master/arcana/footprint_editor.png)                     |

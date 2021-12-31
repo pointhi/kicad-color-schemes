@@ -1,0 +1,29 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "Arcana Theme",
+    "description": "A bright pastel theme",
+    "description_full": "A bright pastel theme for delving into the arcane arts",
+    "identifier": "com.github.pointhi.kicad-color-schemes.arcana",
+    "type": "colortheme",
+    "author": {
+        "name": "Aki Van Ness",
+        "contact": {
+            "web": "https://github.com/lethalbit"
+        }
+    },
+    "maintainer": {
+        "name": "Thomas Pointhuber",
+        "contact": {
+            "web": "https://github.com/pointhi/kicad-color-schemes/"
+        }
+    },
+    "license": "CC0-1.0",
+    "resources": {
+        "Github": "https://github.com/pointhi/kicad-color-schemes"
+    },
+    "versions": [{
+        "version": "1.0",
+        "status": "stable",
+        "kicad_version": "6.0"
+    }]
+}
