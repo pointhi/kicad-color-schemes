@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "filename": "neon",
+    "name": "neon.json",
+    "version": 0
+  },
+  "schematic": {
+    "background": "rgb(0, 0, 1)",
+    "brightened": "rgb(255, 0, 133)",
+    "bus": "rgb(0, 0, 255)",
+    "component_body": "rgb(30, 30, 30)",
+    "component_outline": "rgb(0, 255, 0)",
+    "cursor": "rgb(200, 0, 0)",
+    "erc_error": "rgb(252, 0, 9)",
+    "erc_warning": "rgb(0, 132, 0)",
+    "fields": "rgb(255, 0, 132)",
+    "grid": "rgb(200, 200, 200)",
+    "hidden": "rgb(194, 194, 194)",
+    "junction": "rgb(0, 255, 255)",
+    "label_global": "rgb(255, 128, 128)",
+    "label_hier": "rgb(255, 255, 128)",
+    "label_local": "rgb(252, 252, 252)",
+    "net_name": "rgb(132, 132, 132)",
+    "no_connect": "rgb(0, 0, 132)",
+    "note": "rgb(0, 128, 255)",
+    "pin": "rgb(255, 0, 255)",
+    "pin_name": "rgb(252, 252, 252)",
+    "pin_number": "rgb(252, 252, 252)",
+    "reference": "rgb(252, 252, 252)",
+    "sheet": "rgb(0, 200, 255)",
+    "sheet_filename": "rgb(252, 252, 252)",
+    "sheet_label": "rgb(255, 255, 128)",
+    "sheet_name": "rgb(252, 252, 252)",
+    "value": "rgb(252, 252, 252)",
+    "wire": "rgb(252, 252, 252)",
+    "worksheet": "rgb(252, 252, 252)"
+  }
+}
